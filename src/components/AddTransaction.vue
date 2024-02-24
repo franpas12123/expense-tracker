@@ -27,17 +27,23 @@
 </template>
 
 <script setup>
-import { ref } from 'vue'
+import { ref, onMounted } from 'vue'
 import { useToast } from 'vue-toastification'
 
 const emit = defineEmits(['add-transaction'])
 
 const toast = useToast()
 
-const transaction = ref({
-  id: Math.floor(Math.random() * 100000000),
-  text: '',
-  amount: ''
+const transaction = ref({})
+
+const initTransaction = () => {
+  transaction.value.id = Math.floor(Math.random() * 100000000)
+  transaction.value.text = ''
+  transaction.value.amount = ''
+}
+
+onMounted(() => {
+  initTransaction()
 })
 
 function onSubmit() {
@@ -50,5 +56,6 @@ function onSubmit() {
     return
   }
   emit('add-transaction', transaction.value)
+  initTransaction()
 }
 </script>
