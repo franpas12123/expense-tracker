@@ -31,3 +31,10 @@ coverage
 
 # Local Netlify folder
 .netlify
+
+# Firebase configuration
+firebase.json
+firestore.rules
+firestore.indexes.json
+
+.firebase/hosting*
