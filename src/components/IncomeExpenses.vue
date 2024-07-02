@@ -1,5 +1,5 @@
 <template>
-  <div class="inc-exp-container">
+  <div class="inc-exp-container rounded overflow-hidden shadow-lg">
     <div>
       <h4>Income</h4>
       <p id="money-plus" class="money plus">+${{ totalIncome.toFixed(2) }}</p>

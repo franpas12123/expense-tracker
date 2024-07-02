@@ -1,6 +1,6 @@
 <template>
-  <Header />
-  <div class="container">
+  <div class="container px-3 w-[375px] md:w-2xl lg:4xl">
+    <Header />
     <Balance :total="+total" />
     <IncomeExpenses
       :transactions="transactions"

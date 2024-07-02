@@ -4,6 +4,7 @@
     <div class="form-control">
       <label for="text">Text</label>
       <input
+        class="rounded-lg"
         v-model="transaction.text"
         type="text"
         id="text"
@@ -16,13 +17,14 @@
         (negative - expense, positive - income)
       </label>
       <input
+        class="rounded-lg"
         v-model="transaction.amount"
         type="number"
         id="amount"
         placeholder="Enter amount..."
       />
     </div>
-    <button class="btn">Add transaction</button>
+    <button class="btn rounded-lg">Add transaction</button>
   </form>
 </template>
 
