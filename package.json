@@ -15,10 +15,12 @@
     "vue-toastification": "2.0.0-rc.5"
   },
   "devDependencies": {
+    "@tsconfig/node20": "^20.1.4",
     "@vitejs/plugin-vue": "^5.0.5",
     "autoprefixer": "^10.4.19",
     "postcss": "^8.4.39",
     "tailwindcss": "^3.4.4",
+    "typescript": "^5.5.3",
     "vite": "^5.3.2",
     "vite-plugin-vue-devtools": "^7.3.5"
   }
