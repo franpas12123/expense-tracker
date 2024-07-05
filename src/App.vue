@@ -8,6 +8,7 @@
     />
     <AddTransaction @add-transaction="addTransaction" />
     <TransactionList
+      v-if="transactions.length"
       :transactions="transactions"
       @remove-transaction="onRemoveTransaction"
     />
